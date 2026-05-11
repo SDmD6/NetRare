@@ -1,0 +1,17 @@
+.Rhistory
+.RData
+.Rproj.user/
+
+output/
+string_data/
+
+*.log
+*.gz
+*.zip
+*.html
+
+__pycache__/
+*.pyc
+
+.DS_Store
+Thumbs.db
