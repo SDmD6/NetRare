@@ -1,4 +1,5 @@
 # NetRare
+A reproducible network-based bioinformatics framework for molecular signature characterization and gene prioritization in rare diseases.
 
 ## Features
 
@@ -11,7 +12,7 @@
 - Automated comparative visualizations
 - Reproducible HTML report generation
 
-## Proyect structure
+## Project Structure
 ```text
 NetRare/
 ├── README.md
@@ -45,6 +46,18 @@ NetRare/
 │
 └── docs/
 ```
+## Tech Stack
+
+- R
+- Python
+- Snakemake
+- STRINGdb
+- clusterProfiler
+- igraph
+- tidygraph
+- ggraph
+- Bioconductor
+- Conda
 
 ## Installation
 
@@ -101,19 +114,13 @@ Main results are generated in:
 output/
 ```
 
-## Ejecución
-- Edita data/disease_pairs.tsv con las enfermedades a comparar.
-- Ejecuta main.R, que cargará los scripts modulares.
-- Los resultados se almacenan automáticamente en output/.
-- Para generar el informe HTML: source("scripts/generate_report.R")
+## References
 
-## Referencias
+- STRING: https://string-db.org
+- HPO: https://hpo.jax.org
+- clusterProfiler: https://bioconductor.org/packages/clusterProfiler
+- Yatra: https://github.com/TranslationalBioinformaticsLab/yatra
 
-STRING: https://string-db.org
-HPO: https://hpo.jax.org
-clusterProfiler: https://bioconductor.org/packages/clusterProfiler
-Yatra: https://github.com/TranslationalBioinformaticsLab/yatra
+## Citation
 
-## 
-
-Developed as part of a MSc Bioinformatics thesis project.
+Developed as part of an MSc Bioinformatics thesis focused on reproducible network-based analysis of rare diseases.
