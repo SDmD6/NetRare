@@ -1,21 +1,18 @@
-# NetRare-Comparador de Firmas Moleculares mediante Redes
+# NetRare
 
-Este repositorio contiene el código y los datos necesarios para caracterizar y comparar firmas génicas asociadas a enfermedades mediante métodos de análisis de redes, enriquecimiento funcional y priorización de genes.  
-La herramienta ha sido desarrollada como parte del Trabajo de Fin de Máster en Bioinformática de Sofía Doménech Dauder.
+This repository contains the code and data needed to characterize and compare gene signatures associated with diseases using network analysis, functional enrichment, and gene prioritization methods.
+The tool was developed as part of Sofía Doménech Dauder’s Master’s thesis in Bioinformatics.
 
-## Objetivo
+## Features
 
-Comparar enfermedades raras a partir de sus genes asociados (extraídos de HPO o PanelApp), mediante:
-
-- Construcción de redes de interacción proteica (STRINGdb, con umbrales diferenciados para asociaciones funcionales ≥400 y físicas ≥900).
-- Análisis topológico con igraph/tidygraph.
-- Enriquecimiento funcional **GO-BP y KEGG** (clusterProfiler).
-- Priorización de genes según:
-  - Centralidad (grado + betweenness).
-  - Random walk clásico y ponderado por expresión (**Yatra**).
-- Detección de módulos funcionales (Walktrap + anotación automática).
-- Visualizaciones comparativas (20 tipos: venns, heatmaps, chord plots, scatterplots, etc.).
-- Generación de informes automáticos (`rmarkdown`).
+- Protein-protein interaction network construction using STRINGdb
+- Functional and physical interaction filtering (score ≥400 / ≥900)
+- Network topology analysis with igraph/tidygraph
+- GO Biological Process and KEGG enrichment analysis
+- Gene prioritization using topology and random walk propagation
+- Functional module detection and annotation
+- Automated comparative visualizations
+- Reproducible HTML report generation
 
 ## Estructura del proyecto
 ```text
