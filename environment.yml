@@ -1,0 +1,23 @@
+name: NetRare
+
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  - r-base>=4.2
+  - r-tidyverse
+  - r-igraph
+  - r-ggraph
+  - r-tidygraph
+  - r-pheatmap
+  - r-ggvenn
+  - r-circlize
+  - r-digest
+  - r-glue
+  - r-fs
+  - r-rmarkdown
+  - python>=3.10
+  - numpy
+  - pip
