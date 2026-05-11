@@ -11,7 +11,7 @@
 - Automated comparative visualizations
 - Reproducible HTML report generation
 
-## Estructura del proyecto
+## Proyect structure
 ```text
 NetRare/
 ├── README.md
@@ -46,16 +46,60 @@ NetRare/
 └── docs/
 ```
 
-## Requirements
+## Installation
 
-- R >= 4.2.0
-- Paquetes CRAN y Bioconductor:
-  
-install.packages(c("tidyverse", "igraph", "ggraph", "tidygraph",
-  "pheatmap", "ggvenn", "circlize", "digest", "glue", "fs"))
-if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager")
-BiocManager::install(c("STRINGdb", "clusterProfiler", "org.Hs.eg.db"))
-- Python >= 3.13 con dependencias estándar (numpy, argparse) para Yatra.
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/SDmD6/NetRare.git
+cd NetRare
+```
+
+### 2. Create the conda environment
+
+```bash
+conda env create -f environment.yml
+conda activate netrare
+```
+
+### 3. Install Bioconductor dependencies
+
+```r
+if (!requireNamespace("BiocManager", quietly = TRUE)) {
+  install.packages("BiocManager")
+}
+
+BiocManager::install(c(
+  "STRINGdb",
+  "clusterProfiler",
+  "org.Hs.eg.db"
+))
+```
+## Usage
+
+Edit the disease comparison file:
+
+```text
+data/disease_pairs.tsv
+```
+
+Run the full pipeline:
+
+```bash
+Rscript main.R
+```
+
+Generate the HTML report:
+
+```r
+source("scripts/generate_report.R")
+```
+
+Main results are generated in:
+
+```text
+output/
+```
 
 ## Ejecución
 - Edita data/disease_pairs.tsv con las enfermedades a comparar.
