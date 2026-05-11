@@ -1,4 +1,4 @@
-# Comparador de Firmas Moleculares mediante Redes
+# NetRare-Comparador de Firmas Moleculares mediante Redes
 
 Este repositorio contiene el código y los datos necesarios para caracterizar y comparar firmas génicas asociadas a enfermedades mediante métodos de análisis de redes, enriquecimiento funcional y priorización de genes.  
 La herramienta ha sido desarrollada como parte del Trabajo de Fin de Máster en Bioinformática de Sofía Doménech Dauder.
