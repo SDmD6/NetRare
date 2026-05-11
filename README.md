@@ -1,8 +1,5 @@
 # NetRare
 
-This repository contains the code and data needed to characterize and compare gene signatures associated with diseases using network analysis, functional enrichment, and gene prioritization methods.
-The tool was developed as part of Sofía Doménech Dauder’s Master’s thesis in Bioinformatics.
-
 ## Features
 
 - Protein-protein interaction network construction using STRINGdb
@@ -49,7 +46,7 @@ NetRare/
 └── docs/
 ```
 
-## Requisitos
+## Requirements
 
 - R >= 4.2.0
 - Paquetes CRAN y Bioconductor:
@@ -67,8 +64,12 @@ BiocManager::install(c("STRINGdb", "clusterProfiler", "org.Hs.eg.db"))
 - Para generar el informe HTML: source("scripts/generate_report.R")
 
 ## Referencias
+
 STRING: https://string-db.org
 HPO: https://hpo.jax.org
 clusterProfiler: https://bioconductor.org/packages/clusterProfiler
 Yatra: https://github.com/TranslationalBioinformaticsLab/yatra
 
+## 
+
+Developed as part of a MSc Bioinformatics thesis project.
